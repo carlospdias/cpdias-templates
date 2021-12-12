@@ -26,6 +26,8 @@ target
 .scala_dependencies
 .worksheet
 .sts4-cache/
+.classpath
+.project
 
 ### Linux ###
 *~
