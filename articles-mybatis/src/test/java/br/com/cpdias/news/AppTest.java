@@ -1,0 +1,14 @@
+package br.com.cpdias.news;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+{
+    /**
+     * Rigorous Test :-)
+     */
+    public void shouldAnswerWithTrue()
+    {
+    }
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+  <changeSet  author="carlospdias"  id="add-articles">
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/o-multimilionario-sergio-moro-na-visao-de-gilmar-mendes/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/o-multimilionario-sergio-moro-na-visao-de-gilmar-mendes/" />
+      <column name="TITLE"    value="O multimilionário Sergio Moro, na visão de Gilmar Mendes" />
+      <column name="RESUME"   value="Como mostrou o Radar, o ministro do STF não pretende deixar barato os ataques do ex-juiz ao tribunal" />
+      <column name="CONTENT"  value="Nas conversas que tem com interlocutores no STF, o ministro Gilmar Mendes não deixa passar o fato de Sergio Moro ter saído milionário da sua passagem por uma consultoria dos Estados Unidos.Moro e a empresa não abrem os valores — é fato que Moro ganhou um bom dinheiro –, mas… Se a informação que chegou ao ministro do Supremo for verdadeira, a carreira de Moro na iniciativa privada garantiu ao ex-juiz da Lava-Jato uma fortuna maior que a declarada por Lula em sua fase de palestrante de empreiteiras.Gilmar tem dito que Moro ficou rico depois de ter “quebrado as empresas brasileiras concorrentes das empresas dos Estados Unidos na Petrobras”. O fato de as empresas brasileiras terem montado suas organizações a partir de sistemas paralelos de pagamento de propina a políticos não entra na crítica, claro. Mas a fala é dura. “O Sergio Moro juiz prenderia o Sergio Moro consultor?”, costuma provocar o ministro.O ministro do STF, como mostrou o Radar, não pretende deixar barato os ataques do ex-juiz ao Supremo. Essa briga promete ser longa." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/santander-faz-leilao-de-imoveis-com-lances-a-partir-de-r-32-mil/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/santander-faz-leilao-de-imoveis-com-lances-a-partir-de-r-32-mil/" />
+      <column name="TITLE"    value="Santander faz leilão de imóveis com lances a partir de R$ 32 mil" />
+      <column name="RESUME"   value="‘Feirão de Natal’ do banco venderá bens a preços promocionais em parceria com leiloeiros pelo Brasil" />
+      <column name="CONTENT"  value="O Santander promove até o final deste ano um “Feirão de Natal” no qual centenas de imóveis serão vendidos a preços promocionais em parcerias com casas de leilões pelo país.A Zukerman Leilões pretende vender 110 imóveis do banco até o próximo dia 18. Entre as opções estão lotes comerciais, residenciais e terrenos, ocupados e desocupados, localizados em São Paulo, Bahia, Ceará, Goiás, Mato Grosso do Sul, Minas Gerais, Pará, Paraíba, Pernambuco, Paraná, Rio de Janeiro e Rio Grande do Sul.Os lances iniciais variam de 32.130 reais a 1,6 milhão de reais. No Rio de Janeiro, uma residência tem lance inicial de 229.320 reais, valor que segundo o leiloeiro é 67% abaixo da avaliação de mercado.Uma sala comercial em Porto Alegre será ofertada 58% mais barata do que a avaliação de mercado. O lance inicial é de 214.200 reais.Todos os imóveis estão disponíveis no site da Zukerman. Os interessados precisam acessar o site do leiloeiro e fazer um cadastro para dar lances na disputa. Os imóveis desocupados podem ser visitados. Além disso, o Santander vai oferecer financiamento imobiliário para os compradores." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/bolsonaro-quer-bancos-estatais-a-servico-da-reeleicao/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/bolsonaro-quer-bancos-estatais-a-servico-da-reeleicao/" />
+      <column name="TITLE"    value="Bolsonaro quer bancos estatais a serviço da reeleição" />
+      <column name="RESUME"   value="Caixa, BB e BNDES vão abrir os cofres para ampliar a oferta de crédito no ano que vem" />
+      <column name="CONTENT"  value="Jair Bolsonaro bateu o martelo. Caixa, BB e BNDES vão abrir os cofres para ampliar a oferta de crédito no ano que vem. É o dinheiro que sobrou.O presidente e seus apoiadores querem diminuir o desgaste do governo diante dos brasileiros castigados pela crise econômica que traga o país." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/executivos-de-mcdonalds-burger-king-e-dominos-assumem-ifb/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/executivos-de-mcdonalds-burger-king-e-dominos-assumem-ifb/" />
+      <column name="TITLE"    value="Executivos de McDonald’s, Burger King e Domino’s assumem IFB" />
+      <column name="RESUME"   value="Instituto engloba setores da alimentação fora de casa, como fast foods e suas cadeias de suprimento" />
+      <column name="CONTENT"  value="O Instituto Foodservice Brasil acaba de eleger sua diretoria para o biênio 2022 e 2023. O presidente do McDonald’s no Brasil, Paulo Camargo, assumirá a presidência da entidade que representa setores da alimentação fora de casa, como fast foods e suas cadeias de suprimento.Nos três cargos de vice-presidentes assumirão Danielle Garry, diretora de grandes contas da Puratos, Augusto Santos, diretor de América Latina da Martin Brower, e Fábio Alves, vice-presidente jurídico do Burger King. Como secretária assumirá Flavia Molina, diretora de marketing da Domino’s, e como tesoureiro, Philippe de Grivel, diretor de logística do Caribe e América Latina da Subway.O IFB representa 75 empresas do setor que juntas faturam 102 bilhões de reais por ano e empregam 385 mil funcionários. Juntas, essas empresas têm 171 mil pontos de venda e 185 milhões de consumidores por mês." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/bolsonaro-desafia-o-stf-e-volta-a-atacar-a-vacina-com-mentiras/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/bolsonaro-desafia-o-stf-e-volta-a-atacar-a-vacina-com-mentiras/" />
+      <column name="TITLE"    value="Bolsonaro desafia o STF e volta a atacar a vacina com mentiras" />
+      <column name="RESUME"   value="Presidente já é investigado na Corte por mentir sobre a segurança do imunizante, tomado por muitos dos bolsonaristas que ainda o apoiam no Planalto" />
+      <column name="CONTENT"  value="Jair Bolsonaro escolheu mesmo o caminho do confronto neste fim de ano. Com o Natal chegando, o presidente, alvo de uma série de inquéritos no STF por fake news, voltou a atacar a vacina nesta manhã de sábado.O presidente defendeu a cloroquina, comprovadamente ineficaz contra o coronavírus, e disse sugeriu que as vacinas são responsáveis por complicações de saúde nos imunizados, como trombose e embolia pulmonar.Não há verdade na fala do presidente, mas ele não é mesmo apegado a declarações verdadeiras. “Disponibilizamos 400 milhões de doses de vacina. Compradas a partir do momento em que foram disponibilizadas. Tomei hidroxicloroquina e, se me contaminar de novo, tomo outra vez. Quem já tomou vacina pode se reinfectar? Pode. Respeito a autonomia do médico. O meu irmão Hélio Lopes está internado com embolia. Parece ser efeito da vacina. Vamos aguardar. Tem casos de trombose também”, disse Bolsonaro, como registra Rayanderson Guerra no Globo." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/o-voo-do-astronauta-bolsonarista-na-disputa-eleitoral-de-sao-paulo/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/o-voo-do-astronauta-bolsonarista-na-disputa-eleitoral-de-sao-paulo/" />
+      <column name="TITLE"    value="O voo do astronauta bolsonarista na disputa eleitoral de São Paulo" />
+      <column name="RESUME"   value="Ministro da Ciência e Tecnologia, Marcos Pontes vai começar a aparecer em pesquisas eleitorais encomendadas por apoiadores de Jair Bolsonaro" />
+      <column name="CONTENT"  value="Ministro da Ciência e Tecnologia, Marcos Pontes vai começar a aparecer em pesquisas eleitorais encomendadas por apoiadores de Jair Bolsonaro para o governo de São Paulo.Uma ala do bolsonarismo — que claramente não acredita na candidatura de Tarcísio de Freitas — quer ver se o astronauta decola. Difícil…" />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/pf-abre-inquerito-para-investigar-ataque-hacker-ao-ministerio-da-saude/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/pf-abre-inquerito-para-investigar-ataque-hacker-ao-ministerio-da-saude/" />
+      <column name="TITLE"    value="PF abre inquérito para investigar ataque hacker ao Ministério da Saúde" />
+      <column name="RESUME"   value="Site da pasta foi invadido e aplicativo Conecte SUS, que emite certificado de vacinação, ficou fora do ar" />
+      <column name="CONTENT"  value="A Polícia Federal abriu inquérito para apurar o ataque ao sistema do Ministério da Saúde ocorrido nesta sexta-feira.Hackers invadiram o site da pasta ainda na madrugada. O Conecte SUS, aplicativo que, entre outras coisas, emite o certificado de vacinação contra a Covid-19, ficou fora do ar durante algumas horas.Em comunicado, a PF informou que investiga a autoria e a materialidade dos crimes que poderão ser tipificados como “invasão de dispositivo informático, interrupção ou perturbação de serviço informático, telemático ou de informação de utilidade pública e associação criminosa”.A polícia divulgou ainda que o banco de dados do ministério não foi criptografado pelos invasores. Ou seja, os dados não teriam sido roubados. Os hacker teriam invadido a nuvem pública em que o site está hospedado e promovido mudanças na página inicial do site do ministério." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/bolsonaro-detona-o-chefe-da-anvisa-mas-tera-que-engoli-lo/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/bolsonaro-detona-o-chefe-da-anvisa-mas-tera-que-engoli-lo/" />
+      <column name="TITLE"    value="Bolsonaro detona o chefe da Anvisa, mas terá que engoli-lo" />
+      <column name="RESUME"   value="Barra Torres segue a ciência e tem se descolado do universo paralelo do governo na discussão do passaporte da vacina" />
+      <column name="CONTENT"  value="Jair Bolsonaro descontou sua fúria em Marcelo Queiroga, como revelou o Radar, porque anda frustrado em não poder demitir o chefe da Anvisa, Antonio Barra Torres, a quem chama de ingrato por tabelar com “inimigos” do Planalto na discussão da vacina.Barra Torres segue a ciência e tem se descolado do universo paralelo do governo. Diferentemente de Queiroga, que faz todas as vontades do presidente por medo de ser demitido, o chefe da Anvisa tem mandato — vai até 2024 — e está protegido da guilhotina de Bolsonaro." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/jovens-de-16-a-24-anos-sao-os-que-menos-usam-mascara-no-pais-diz-pesquisa/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/jovens-de-16-a-24-anos-sao-os-que-menos-usam-mascara-no-pais-diz-pesquisa/" />
+      <column name="TITLE"    value="Jovens de 16 a 24 anos são os que menos usam máscara no país, diz pesquisa" />
+      <column name="RESUME"   value="Sete em cada dez (72%) entrevistados com mais de 60 anos afirmaram que estão usando o equipamento de proteção em locais abertos ou fechados" />
+      <column name="CONTENT"  value="Pesquisa da CNI realizada pelo Instituto FSB revela que os brasileiros acima dos 60 anos são os que mais usam máscaras.Sete em cada dez (72%) entrevistados afirmaram que estão usando o equipamento de proteção em locais abertos ou fechados.O índice cai 30 pontos percentuais, para 42%, entre as pessoas de 16 a 24 anos. O sexo também impacta no hábito de usar máscaras. Enquanto 59% das mulheres afirma que usam este item de proteção, entre os homens o índice cai para 50%.O Sudeste é a região onde as pessoas mais usam máscaras. Seis em cada dez (61%) pessoas afirmaram que usam máscaras em locais abertos e fechados no Sudeste.No Norte e Centro Oeste, o percentual cai para 45%. Os dados são da pesquisa de uma pesquisa da CNI por meio do Instituto FSB.Foram entrevistados 2.016 brasileiros com idade a partir de 16 anos, nas 27 unidades da federação entre os dias 18 e 23 de novembro. A margem de erro no total da amostra é de dois pontos percentuais." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/jornalista-lanca-livro-sobre-tragedia-de-brumadinho/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/jornalista-lanca-livro-sobre-tragedia-de-brumadinho/" />
+      <column name="TITLE"    value="Jornalista lança livro sobre tragédia de Brumadinho" />
+      <column name="RESUME"   value="Desastre em Minas Gerais completa três anos em janeiro" />
+      <column name="CONTENT"  value="A Intrínseca lançará no mês que vem o livro reportagem “Arrastados”, sobre a tragédia de Brumadinho (MG), escrito pela jornalista vencedora do prêmio Jabuti Daniela Arbex.Autora de Cova 312, Holocausto Brasileiro e Todo Dia a Mesma Noite, este último sobre o incêndio da Boate Kiss, Arbex ouviu mais de 200 pessoas entre sobreviventes da tragédia, familiares de vítimas e autoridades.A jornalista se propõe a reconstruir, com base em relatos de pessoas e documentos oficiais, as 96 primeiras horas da tragédia, do rompimento da Barragem de Córrego do Feijão operada pela Vale aos três dias seguintes.A onda de lama de rejeitos tóxicos de mineração se estendeu por 300 quilômetros, cruzou 17 cidades e deixou 272 mortes, considerando que duas vítimas estavam grávidas. Até hoje sete corpos resgatados permanecem sem identificação.O livro “Arrastados” será lançado dia 25 de janeiro, quando a tragédia completará três anos.VEJA RECOMENDA | Conheça a lista dos livros mais vendidos da revista e nossas indicações especiais para você." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/opcao-que-impede-passageiros-homens-faz-crescer-mulheres-na-uber/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/opcao-que-impede-passageiros-homens-faz-crescer-mulheres-na-uber/" />
+      <column name="TITLE"    value="Opção que impede passageiros homens faz crescer mulheres na Uber" />
+      <column name="RESUME"   value="Recurso dá mais segurança às motoristas e foi responsável por aumento do número de corridas feitas por mulheres, especialmente à noite" />
+      <column name="CONTENT"  value="O número de motoristas mulheres ativas na Uber cresceu 22% entre outubro e novembro de 2021 — três vezes mais que o aumento de motoristas homens no mesmo período, mostra levantamento da plataforma.Um dos motivos para a alta, diz a empresa, é a ferramenta U-Elas — que permite que mulheres e pessoas não-binárias cadastradas recebam chamadas apenas de passageiras que se identificam como mulheres.Outros fatores são, ainda, a busca por autonomia financeira e flexibilidade de horários.A Uber, que ao todo tem hoje cerca de um milhão de condutores parceiros no Brasil, diz que uma em cada quatro motoristas mulheres usou a ferramenta ao menos uma vez por semana no último trimestre — sendo que mais da metade que utilizou o recurso passou a fazer mais viagens, especialmente à noite." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/bolsonaristas-de-santa-catarina-estao-cada-vez-mais-proximos-de-moro/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/bolsonaristas-de-santa-catarina-estao-cada-vez-mais-proximos-de-moro/" />
+      <column name="TITLE"    value="Bolsonaristas de Santa Catarina estão cada vez mais próximos de Moro" />
+      <column name="RESUME"   value="Até apoiadores que permanecem com Bolsonaro já reconhecem que poderiam votar no ex-juiz em 2022" />
+      <column name="CONTENT"  value="Não é só no Paraná que o ex-juiz Sergio Moro está conquistando bolsonaristas arrependidos com a gestão de Jair Bolsonaro no Planalto. O pré-candidato do Podemos também faz estrago na base eleitoral do presidente em Santa Catarina.Nem Luciano Hang é capaz de falar mal do ex-juiz. “Moro é segunda opção do Hang em 2022”, diz um amigo." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/jamais-enriqueci-como-juiz-ministro-ou-no-setor-privado-diz-moro/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/jamais-enriqueci-como-juiz-ministro-ou-no-setor-privado-diz-moro/" />
+      <column name="TITLE"    value="‘Jamais enriqueci como juiz, ministro ou no setor privado’, diz Moro" />
+      <column name="RESUME"   value="'Atuei como consultor de uma empresa privada internacional, porque o trabalho era lícito', diz o pré-candidato em resposta a falas de Gilmar Mendes" />
+      <column name="CONTENT"  value="Sergio Moro decidiu falar sobre as declarações do ministro Gilmar Mendes dadas a interlocutores do STF, como o Radar registra nesta semana na edição de VEJA que está nas bancas.O pré-candidato do Podemos mostra-se descrente que Mendes tenha dito o que foi registrado. Como o Radar mantém as informações, ele diz o seguinte:“Sobre a nota publicada na coluna Radar, não acredito que um ministro do Supremo Tribunal Federal, cujos pares foram tantas vezes vítimas de Fake News, possa estar praticando o mesmo método que, aliás, faz parte de um inquérito na Corte. A despeito de ser ou não verdadeira a informação sobre a autoria das inverdades, é importante destacar que jamais enriqueci como juiz concursado, como Ministro da Justiça ou mesmo no setor privado. Após deixar o ministério, atuei como consultor de uma empresa privada internacional, porque o trabalho era lícito, com remuneração de mercado e absolutamente honesta. Meu trabalho, aliás, era auxiliar empresas a criar sistemas para prevenir casos de corrupção, fraudes corporativas e assédio sexual e, dessa forma, incentivá-las a fazer a coisa certa.”" />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/cinco-meses-apos-cirurgia-bolsonaro-continua-arriscando-a-saude/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/cinco-meses-apos-cirurgia-bolsonaro-continua-arriscando-a-saude/" />
+      <column name="TITLE"    value="Cinco meses após cirurgia, Bolsonaro continua arriscando a saúde" />
+      <column name="RESUME"   value="O presidente come muito e come mal. Além das besteiras, não mastiga os alimentos com a devida paciência, o que prejudica a digestão" />
+      <column name="CONTENT"  value="Jair Bolsonaro foi advertido pelos médicos. Precisa urgentemente regrar a alimentação. O presidente come muito e come mal. Além das besteiras, não mastiga os alimentos com a devida paciência, o que prejudica a digestão." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/mendes-diz-que-moro-e-deltan-converteram-uniao-estavel-em-casamento/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/mendes-diz-que-moro-e-deltan-converteram-uniao-estavel-em-casamento/" />
+      <column name="TITLE"    value="Mendes diz que Moro e Deltan ‘converteram união estável em casamento’" />
+      <column name="RESUME"   value="O ministro do STF não pretende deixar sem resposta os ataques da dupla contra a Corte" />
+      <column name="CONTENT"  value="Sobre a filiação do ex-chefe da Lava-Jato em Curitiba Deltan Dallagnol ao Podemos de Sergio Moro, Gilmar Mendes ironizou, numa conversa com um interlocutores: “Moro e o Deltan estão convertendo a união estável em casamento”.Como o Radar mostra na edição de VEJA que está nas bancas, o ministro do STF não pretende deixar sem resposta os ataques da dupla contra a Corte.O ministro, ao usar a figura do casamento, fala das descobertas da Vaza-Jato que acabaram por levar o Supremo a anular condenações e investigações da Lava-Jato." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/o-recado-de-fux-a-bolsonaro-na-onu-judiciario-e-ultraindependente/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/o-recado-de-fux-a-bolsonaro-na-onu-judiciario-e-ultraindependente/" />
+      <column name="TITLE"    value="O recado de Fux a Bolsonaro na ONU: ‘Judiciário é ultraindependente’" />
+      <column name="RESUME"   value="'Nos recusamos a nos subjugarmos a qualquer tipo de governo', disse o presidente do STF em conversa com secretário-geral António Guterres" />
+      <column name="CONTENT"  value="No Dia Internacional de Direitos Humanos, o presidente do STF, Luiz Fux, participou de audiência com o secretário-geral das Nações Unidas, António Guterres, na sede da ONU em Nova Iorque.“O Brasil, por momentos turbulentos que possa passar, as instituições são hígidas, a democracia há de prevalecer como assim também o Estado de direito e a tutela da pessoa humana. O Judiciário é absolutamente um poder ultraindependente, nos recusamos a nos subjugarmos a qualquer tipo de governo. Há harmonia entre os poderes, mas há também independência, que é o nosso papel, nosso dever e a nossa obrigação”, disse Fux.Outros temas abordados foram a resposta do Brasil ao contexto da pandemia e a forma de atuação do Supremo Tribunal Federal, que segundo o presidente, trabalha de forma coesa para defender valores fundamentais. Fux falou ainda sobre o papel do Conselho Nacional de Justiça no fomento a políticas judiciárias que uniformizam e melhoram a resposta do Judiciário aos desafios atuais.Guterres manifestou interesse em seguir acompanhando os avanços do Brasil, especialmente no campo dos Objetivos de Desenvolvimento Sustentável, e em discutir oportunidades para evoluções futuras. O encontro ocorreu após evento que discutiu desafios na América Latina no campo do acesso a justica e garantia de direitos humanos." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/foco-de-moro-esta-nos-evangelicos-diz-chefe-do-podemos/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/foco-de-moro-esta-nos-evangelicos-diz-chefe-do-podemos/" />
+      <column name="TITLE"    value="Foco de Moro está nos evangélicos, diz chefe do Podemos" />
+      <column name="RESUME"   value="Ex-juiz quer ampliar encontros com lideranças religiosas a fim de conquistar votos do eleitorado bolsonarista" />
+      <column name="CONTENT"  value="De olho na conversão de votos do eleitorado bolsonarista, o ex-juiz Sergio Moro vai priorizar as agendas de final de ano com representantes do núcleo evangélico, diz a presidente do Podemos Renata Abreu.Patrocinados por Uziel Santana, da Associação Nacional dos Juristas Evangélicos, os encontros já têm acontecido em São Paulo. Nesta semana, Moro se reuniu com pastores e lideranças em favor de pautas conservadoras.O ex-juiz embarca neste final de semana para os Estados Unidos, onde deve finalizar a mudança definitiva para o Brasil. A partir do dia 22 até janeiro, a ideia é retomar as conversas.A leitura de pessoas próximas a Moro é a de que o pilar que elegeu Bolsonaro é baseado em cinco frentes: liberais e lavajatistas — que já desembarcaram faz tempo do governo –, ‘bolsominions’, evangélicos e o agronegócio.Os dois últimos grupos serão chave para o ex-juiz dar o pontapé inicial da campanha.Nos bastidores, é sabido que a relação de Bolsonaro com a ala evangélica está fragilizada — e muito — por causa de André Mendonça. O núcleo evangélico sente que Bolsonaro não apoiou tanto quanto deveria o recém-escolhido ministro do STF.“Se eles verem uma alternativa ao Lula, com perfil conservador, não é difícil de desembarcarem de vez do governo Bolsonaro”, diz um aliado de Moro." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/deputado-aciona-mp-contra-doria-por-desperdicio-em-doses-da-coronavac/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/deputado-aciona-mp-contra-doria-por-desperdicio-em-doses-da-coronavac/" />
+      <column name="TITLE"    value="Deputado aciona MP contra Doria por desperdício em doses da Coronavac" />
+      <column name="RESUME"   value="Lote excedente com 15 milhões de unidades está parado e sem previsão de ser utilizado no Programa Nacional de Imunização" />
+      <column name="CONTENT"  value="O deputado Paulo Fiorilo (PT) acionou o Ministério Público de São Paulo na última quinta-feira contra o governo estadual por suposto desperdício de recursos públicos na fabricação de doses extras da Coronavac.O Instituto Butantan produziu 15 milhões de doses a mais do que as 100 milhões contratadas pelo Ministério da Saúde para distribuição no Programa Nacional de Imunização contra a Covid-19.O lote excedente, diz a representação protocolada no MPSP, vence em agosto de 2022 e, sem possibilidade de uso no PNI, está parado, o que pode vir a gerar desperdício de dinheiro público.“A decisão de produzir doses extras, sem mercado definido, e agora com um prazo de validade tão exíguo, tem que ser analisada pela Procuradoria Geral de Justiça do Estado. Não há que se faltar vacina, mas o maior estado do Brasil tem que ter uma programação que não preveja ônus desnecessários aos cofres públicos”, diz Paulo Fiorilo, autor da representação.Atualmente, nem governo federal e nem os governos estaduais mostraram interesse em adquirir novas doses da vacina do Butantan. A utilização da Coronavac em crianças — público que ainda não foi completamente imunizado — também não está autorizada pela Anvisa." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/pdt-entra-no-stf-contra-pec-dos-precatorios/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/pdt-entra-no-stf-contra-pec-dos-precatorios/" />
+      <column name="TITLE"    value="PDT entra no STF contra PEC dos Precatórios" />
+      <column name="RESUME"   value="Partido de Ciro Gomes e Carlos Lupi diz que o calote é inconstitucional e motivado por 'interesses eleitorais'" />
+      <column name="CONTENT"  value="O PDT deu entrada no STF com pedido de liminar para suspender as mudanças da PEC dos Precatórios, que foi promulgada na última quinta depois de ser aprovada no Congresso.Segundo o partido, os precatórios foram previstos na Constituição de 1988 e o governo não pode simplesmente decidir não honrar suas dívidas contraídas judicialmente.O partido afirma em seu pedido ao STF que o calote que governo federal foi autorizado a dar “zomba da moralidade da segurança jurídica em prol de efêmeros interesses eleitorais”." />
+    </insert>
+    <insert tableName="ARTICLES" dbms="oracle">
+      <column name="ID"       value="https://veja.abril.com.br/blog/radar/a-desilusao-de-guedes-com-o-suposto-empenho-do-planalto-pelas-reformas/" />
+      <column name="LINK"     value="https://veja.abril.com.br/blog/radar/a-desilusao-de-guedes-com-o-suposto-empenho-do-planalto-pelas-reformas/" />
+      <column name="TITLE"    value="A desilusão de Guedes com o suposto empenho do Planalto pelas reformas" />
+      <column name="RESUME"   value="Ministro da Economia encontrou deputado relator da reforma administrativa num evento e admitiu o corpo mole de parte do governo" />
+      <column name="CONTENT"  value="Num evento com empresários, Arthur Maia, relator da reforma administrativa na Câmara, disse, na frente de Paulo Guedes, que o texto travou por falta de liderança do governo.Guedes, veja só, concordou com o deputado ao dizer que “gente do palácio boicotou” as mudanças." />
+    </insert>
+  </changeSet>
+</databaseChangeLog>
