@@ -22,7 +22,7 @@ import liquibase.integration.spring.SpringLiquibase;
 @Configuration
 @ComponentScan("br.com.cpdias.news")
 public class ConfigurationAppTest {
-    
+   
     public void createDataBase(DataSource ds) {
         SpringLiquibase liquibase = new SpringLiquibase();
         
@@ -35,7 +35,7 @@ public class ConfigurationAppTest {
             liquibase.afterPropertiesSet();
            
         } catch (LiquibaseException e) {
-            e.printStackTrace();
+            System.err.println(e);
         }
        
     }
@@ -47,15 +47,10 @@ public class ConfigurationAppTest {
                 .setType(EmbeddedDatabaseType.H2)
                 .setName("jdbc:h2:mem:ARTICLES_DB;MODE=POSTGRESQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;INIT=CREATE SCHEMA IF NOT EXISTS NEWS")
                 .build();
-        
+        createDataBase(db);
         return db;
     }
-    
-    
-    /*@Bean
-    public DataSource dataSource() {
-        return new JndiDataSourceLookup().getDataSource("java:/NEWS_APP");
-    } */
+   
     @Bean
     public PlatformTransactionManager txManager() {
         return new DataSourceTransactionManager(dataSource());
@@ -66,7 +61,7 @@ public class ConfigurationAppTest {
     public SqlSessionFactory sqlSessionFactory() throws Exception {
       SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
       
-      createDataBase(dataSource());
+      
       sqlSessionFactory.setDataSource(dataSource());
       sqlSessionFactory.setConfigLocation(new ClassPathResource("mybatis-config.xml"));
       sqlSessionFactory.setFailFast(true);

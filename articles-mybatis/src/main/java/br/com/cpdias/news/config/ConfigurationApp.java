@@ -10,33 +10,17 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @ComponentScan("br.com.cpdias.news")
 public class ConfigurationApp {
+   
     @Bean
     public DataSource dataSource() {
-        EmbeddedDatabase db = new EmbeddedDatabaseBuilder()
-                .setType(EmbeddedDatabaseType.H2)
-                .setName("testDb;DB_CLOSE_ON_EXIT=FALSE;MODE=Oracle;INIT=create " +
-                        "schema if not exists " +
-                        "schema_a\\;create schema if not exists schema_b;" +
-                        "DB_CLOSE_DELAY=-1;")
-                .addScript("sql/provPlan/createTable.sql")
-                .addScript("sql/provPlan/insertData.sql")
-                .addScript("sql/provPlan/insertSpecRel.sql")
-                .build();
-        
-        return db;
-    }
-    /*@Bean
-    public DataSource dataSource() {
         return new JndiDataSourceLookup().getDataSource("java:/NEWS_APP");
-    } */
+    }
     @Bean
     public PlatformTransactionManager txManager() {
         return new DataSourceTransactionManager(dataSource());
