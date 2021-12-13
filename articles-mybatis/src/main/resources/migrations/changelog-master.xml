@@ -7,5 +7,5 @@
 
   <include file="changelogs/table/create-articles.xml" relativeToChangelogFile="true" />
   <include file="changelogs/table/insert-articles.xml" relativeToChangelogFile="true" />
-  
+   
   </databaseChangeLog>

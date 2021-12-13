@@ -212,6 +212,7 @@
         <configuration>
           <propertyFileWillOverride>true</propertyFileWillOverride>
           <propertyFile>src/main/resources/migrations/liquibase.properties</propertyFile>
+          
         </configuration>
         <dependencies>
           <dependency>

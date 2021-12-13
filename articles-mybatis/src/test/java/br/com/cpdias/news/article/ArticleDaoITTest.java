@@ -34,8 +34,10 @@ public class ArticleDaoITTest {
     @DisplayName("Deve retorna uma lista de artigos válidos.")
     public void shouldReturnAValidListOfArticles() {
         List<Article> articles = articleDao.restoreAllOfTheDay();
+        System.out.println(articles);
         
        for(Article article: articles) {
+           System.out.println("6666666666666666666666666666666666666666666");
            System.out.println(article.getContent());
        }
         
