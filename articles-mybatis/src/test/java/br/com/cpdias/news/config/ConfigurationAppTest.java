@@ -45,7 +45,7 @@ public class ConfigurationAppTest {
       
         EmbeddedDatabase db = new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)
-                .setName("jdbc:h2:mem:ARTICLES_DB;MODE=POSTGRESQL;DB_CLOSE_DELAY=-1;INIT=CREATE SCHEMA IF NOT EXISTS NEWS")
+                .setName("jdbc:h2:mem:ARTICLES_DB;MODE=POSTGRESQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;INIT=CREATE SCHEMA IF NOT EXISTS NEWS")
                 .build();
         
         return db;

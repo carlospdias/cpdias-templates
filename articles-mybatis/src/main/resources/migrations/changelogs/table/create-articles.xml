@@ -7,16 +7,16 @@
 
   <changeSet  author="carlospdias"  id="create-table-articles">
     <createTable tableName="ARTICLES">
-      <column  name="ID"  type="VARCHAR(30)">
+      <column  name="ID"  type="VARCHAR(120)">
         <constraints  nullable="false"  primaryKey="true"  unique="true" primaryKeyName="PK_ARTICLE"/>
       </column>
-      <column  name="LINK"  type="VARCHAR(60)">
+      <column  name="LINK"  type="VARCHAR(120)">
         <constraints  nullable="false"/>
       </column>
-      <column  name="TITLE"  type="VARCHAR(30)" >
+      <column  name="TITLE"  type="VARCHAR(100)" >
         <constraints  nullable="false"/>
       </column>
-      <column  name="RESUME"  type="VARCHAR(30)">
+      <column  name="RESUME"  type="VARCHAR(200)">
         <constraints  nullable="false"/>
       </column>
       <column  name="CONTENT"  type="VARCHAR(4000)">
