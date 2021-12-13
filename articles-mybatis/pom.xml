@@ -66,6 +66,12 @@
         <version>4.1.0</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+        <version>4.2.2</version>
+        <scope>test</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -139,6 +145,17 @@
       <artifactId>mockito-core</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>2.0.202</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -193,7 +210,7 @@
         <artifactId>liquibase-maven-plugin</artifactId>
         <version>4.2.2</version>
         <configuration>
-          <propertyFileWillOverride>true</propertyFileWillOverride> 
+          <propertyFileWillOverride>true</propertyFileWillOverride>
           <propertyFile>src/main/resources/migrations/liquibase.properties</propertyFile>
         </configuration>
         <dependencies>

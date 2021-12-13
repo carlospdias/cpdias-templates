@@ -8,7 +8,7 @@
     <result property="resume"  column="RESUME"   javaType="string"/>
     <result property="content" column="CONTENT"  javaType="string"/>
   </resultMap>
-  <select id="selectAllArticles" resultType="ArticleResultMap">
+  <select id="selectAllArticles" resultMap="ArticleResultMap">
   <![CDATA[
     SELECT
       ARTICLES.ID,
