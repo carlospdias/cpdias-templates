@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+  <changeSet  author="carlospdias"  id="create-table-articles">
+    <createTable tableName="ARTICLES">
+      <column  name="ID"  type="VARCHAR(120)">
+        <constraints  nullable="false"  primaryKey="true"  unique="true" primaryKeyName="PK_ARTICLE"/>
+      </column>
+      <column  name="LINK"  type="VARCHAR(120)">
+        <constraints  nullable="false"/>
+      </column>
+      <column  name="TITLE"  type="VARCHAR(100)" >
+        <constraints  nullable="false"/>
+      </column>
+      <column  name="RESUME"  type="VARCHAR(200)">
+        <constraints  nullable="false"/>
+      </column>
+      <column  name="CONTENT"  type="VARCHAR(4000)">
+        <constraints  nullable="false" />
+      </column>
+
+    </createTable>
+  </changeSet>
+</databaseChangeLog>

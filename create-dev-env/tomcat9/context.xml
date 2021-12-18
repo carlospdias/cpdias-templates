@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+    <ResourceLink name="jdbc/${jndi.jdbc.name}"
+                  global="jdbc/${jndi.jdbc.name}"
+                  auth="Container"
+                  type="javax.sql.DataSource" />
+
+    <Resource name="jdbc/MyDB"
+              global="jdbc/MyDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="${db.driver}"
+              url="${db.url}"
+              username="${db.user}"
+              password="${db.password}"
+              maxActive="25"
+              maxIdle="20"
+              minIdle="5"
+              maxWait="10000"/>
+</Context>
