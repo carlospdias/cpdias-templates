@@ -7,7 +7,7 @@
   
   <!-- HELP:https://howtodoinjava.com/log4j2/log4j2-rollingfileappender-example/ -->
   <Properties>
-    <Property name="BASE_LOG_DIR" value="target" />
+    <Property name="BASE_LOG_DIR" value="${sys:jboss.server.log.dir}" />
     <Property name="FILE_LOG_NAME" value="logfile" />
   </Properties>
 
