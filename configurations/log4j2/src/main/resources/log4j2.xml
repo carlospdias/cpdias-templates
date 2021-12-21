@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60" strict="true" 
+  xmlns="http://logging.apache.org/log4j/2.0/config"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://logging.apache.org/log4j/2.0/config
+               https://raw.githubusercontent.com/apache/logging-log4j2/master/log4j-core/src/main/resources/Log4j-config.xsd">
+  
+  <!-- HELP:https://howtodoinjava.com/log4j2/log4j2-rollingfileappender-example/ -->
+  <Properties>
+    <Property name="BASE_LOG_DIR" value="target" />
+    <Property name="FILE_LOG_NAME" value="logfile" />
+  </Properties>
+
+  <Appenders>
+    <RollingFile name="RootFile" fileName="${BASE_LOG_DIR}/${FILE_LOG_NAME}.log"
+          filePattern="${BASE_LOG_DIR}/${FILE_LOG_NAME}-%d{yyyy-MM-dd}-%i.log.gz" 
+          immediateFlush="true" 
+          append="true">
+      <PatternLayout pattern=" %d{yyyy-MM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1"  />
+      </Policies>
+      <DefaultRolloverStrategy max="10" />
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="com.opensymphony.xwork2"   level="info" additivity="false">
+      <AppenderRef ref="RootFile" />
+    </Logger>
+    <Logger name="org.apache.struts2"        level="info" additivity="false">
+      <AppenderRef ref="RootFile" />
+    </Logger>
+    <Logger name="org.springframework.core"  level="info" additivity="false">
+      <AppenderRef ref="RootFile" />
+    </Logger>
+    
+    <Root level="info">
+      <AppenderRef ref="RootFile" />
+    </Root>
+  </Loggers>
+</Configuration>
